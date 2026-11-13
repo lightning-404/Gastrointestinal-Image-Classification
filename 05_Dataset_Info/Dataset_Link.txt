@@ -1,0 +1,41 @@
+Dataset Name:
+Kvasir-VQA
+
+Dataset Source:
+Hugging Face
+
+Dataset URL:
+https://huggingface.co/datasets/SimulaMet-HOST/Kvasir-VQA
+
+Dataset Used in This Project:
+The project uses gastrointestinal endoscopy images from Kvasir-VQA.
+
+Target Classes:
+1. Normal
+2. Polyps
+3. Esophagitis
+4. Ulcerative Colitis
+
+Original Dataset Size:
+58,849 rows
+
+Rows After Selecting the Four Target Classes:
+49,652 rows
+
+Unique Images Used:
+5,262 unique images based on img_id
+
+Final Dataset Split:
+Train: 3,683 images
+Validation: 789 images
+Test: 790 images
+
+Data Leakage Check:
+Train–Validation overlap: 0
+Train–Test overlap: 0
+Validation–Test overlap: 0
+
+Note:
+The dataset contains multiple question-answer records that may refer to the same image.
+Therefore, img_id was used to identify unique images and prevent the same image
+from appearing in more than one dataset split.
